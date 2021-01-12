@@ -1,0 +1,66 @@
+
+body {
+	font-size: 1.125rem;
+	color: DimGrey;
+	margin: 0;
+}
+h1 {
+	font-size: 3rem;
+	color: #212614;
+	text-align: center;
+}
+h1 span {
+	color:#b7832f;
+}
+h2 {
+	font-size: 1.5rem;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+img {
+	width: 100%;
+}
+
+/* untuk adjust color selection ikut besar width-screen 
+@media (min-width: 600px) {
+	body {
+		background: LightPink;
+	}
+}
+@media (min-width: 800px) {
+	body {
+		background: DeepPink;
+	}
+}*/
+.columns {
+	display: flex;
+	margin-bottom: 0.5em;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.col-1 {
+	width: 20%;
+}
+.col-2 {
+	width: 40%;
+}
+.col-3 {
+	width: 70%;
+}
+.col-bg{
+	background: #212614;
+	padding:0.5rem;
+	color: #fff;
+}
+/*ini untuk adjustable content ikut screen - bootstrap*/
+@media (max-width: 600px) {
+	.columns {
+		flex-direction: column;
+	}
+	.col-1, .col-2, .col-3 {
+		width: 100%;
+	}
+}
